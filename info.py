@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '29843112'))
-API_HASH = environ.get('API_HASH', '7519cd035add179edec5c84933ab6622')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6694528458:AAFs_k90OVv23pl4L5KD3yYBUsAu24sGt-M")
+API_ID = int(environ.get('API_ID', '22939818'))
+API_HASH = environ.get('API_HASH', 'ef43fe3762fb69770897433112183da3')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6693659212:AAENeESni5XF_NVyl-w0xoHKxDjXcdFFu0k")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -43,14 +43,14 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Tessafilt:Tessafilt10@cluster0.ltnqxjp.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Gimmy10:Gimmy1010@cluster0.xhigbs1.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '15c728d0af696e2c4751e0d3a965a0652b393ea7')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omnifly.in.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'ab902e9f48d0f651e1bca4fee694b0efc85a1cf2')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
@@ -58,7 +58,7 @@ MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SAM_DUB_LEZHa')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+j1Z12sl21vw1Mjdl')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/SMD_Dulinks/25')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/SMD_Dulinks/26')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', '𝐖𝐡𝐚𝐭 𝐀𝐫𝐞 𝐘𝐨𝐮 𝐋𝐨𝐨𝐤𝐢𝐧𝐠 𝐀 ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001832202316'))
@@ -92,4 +92,4 @@ LOG_STR += (f"CUSTOM_FILE_CAPTION enabled with value {CUSTOM_FILE_CAPTION}, your
 LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_IMDB_DESCRIPTION is disabled , Plot will be shorter.\n")
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
-LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}" is {IMDB_TEMPLATE}"
