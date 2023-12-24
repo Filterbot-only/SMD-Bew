@@ -1857,7 +1857,7 @@ async def advantage_spell_chok(client, msg):
         if not g_s:
             reqst_gle = query.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("𝐆𝐨𝐨𝐠𝐥𝐞", url=f"https://www.google.com/search?q={reqst_gle}")
+                       InlineKeyboardButton("👇 𝐂𝐡𝐞𝐜𝐤 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐍𝐨𝐰 𝐎𝐧 𝐆𝐨𝐨𝐠𝐥𝐞 👇", url=f"https://www.google.com/search?q={reqst_gle}")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
